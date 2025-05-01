@@ -17,3 +17,10 @@ resource "aws_vpc" "sub" {
     Name = "main-vpc"
   }
 }
+
+resource "aws_sqs_queue" "main" {
+  name                       = "main-queue"
+  visibility_timeout_seconds = 300
+}
+
+
