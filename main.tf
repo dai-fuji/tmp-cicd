@@ -37,3 +37,5 @@ resource "aws_sqs_queue" "sub03" {
   name                       = "sub03-queue"
   visibility_timeout_seconds = 100
 }
+
+## コメントだけ追加
