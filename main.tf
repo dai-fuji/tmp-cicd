@@ -39,3 +39,4 @@ resource "aws_sqs_queue" "sub03" {
 }
 
 ## コメントだけ追加
+## これは1機能の変更です。
