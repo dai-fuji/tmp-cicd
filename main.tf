@@ -37,8 +37,3 @@ resource "aws_sqs_queue" "sub03" {
   name                       = "sub03-queue"
   visibility_timeout_seconds = 100
 }
-
-resource "aws_sqs_queue" "sub04" {
-  name                       = "sub03-queue"
-  visibility_timeout_seconds = 200
-}
