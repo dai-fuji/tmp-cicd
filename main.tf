@@ -28,4 +28,8 @@ resource "aws_sqs_queue" "sub" {
   visibility_timeout_seconds = 300
 }
 
+resource "aws_sqs_queue" "sub02" {
+  name                       = "sub02-queue"
+  visibility_timeout_seconds = 300
+}
 
