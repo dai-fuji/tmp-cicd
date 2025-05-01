@@ -23,4 +23,9 @@ resource "aws_sqs_queue" "main" {
   visibility_timeout_seconds = 300
 }
 
+resource "aws_sqs_queue" "sub" {
+  name                       = "sub-queue"
+  visibility_timeout_seconds = 300
+}
+
 
