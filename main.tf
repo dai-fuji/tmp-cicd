@@ -9,3 +9,11 @@ resource "aws_vpc" "main" {
     Name = "main-vpc"
   }
 }
+
+resource "aws_vpc" "sub" {
+  cidr_block = "10.0.0.0/16"
+
+  tags = {
+    Name = "main-vpc"
+  }
+}
