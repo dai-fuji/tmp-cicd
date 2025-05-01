@@ -23,4 +23,4 @@ resource "aws_sqs_queue" "main" {
   visibility_timeout_seconds = 300
 }
 
-
+#スカッシュマージ後の編集のPRを作成してみる。
