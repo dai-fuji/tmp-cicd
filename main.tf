@@ -25,11 +25,17 @@ resource "aws_sqs_queue" "main" {
 
 resource "aws_sqs_queue" "sub" {
   name                       = "sub-queue"
-  visibility_timeout_seconds = 300
+  visibility_timeout_seconds = 100
 }
 
 resource "aws_sqs_queue" "sub02" {
   name                       = "sub02-queue"
-  visibility_timeout_seconds = 300
+  visibility_timeout_seconds = 100
+}
+
+
+resource "aws_sqs_queue" "sub03" {
+  name                       = "sub03-queue"
+  visibility_timeout_seconds = 100
 }
 
